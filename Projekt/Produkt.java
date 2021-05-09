@@ -18,5 +18,5 @@ public abstract class Produkt{
 
     public abstract void nastavRestauraciu(Restauracia restauracia);
 
-    public abstract void zobrazInfo();
+    public abstract void zobrazInfo(String stav);
 }

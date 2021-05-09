@@ -18,8 +18,8 @@ public class Pitie extends Produkt {
     }
 
     @Override
-    public void zobrazInfo() {
-        System.out.println("Toto je pitie");
+    public void zobrazInfo(String stav) {
+        System.out.println("[" + stav + "] " +"Pitie - [" + super.nazov + "]");
     }
 
     @Override

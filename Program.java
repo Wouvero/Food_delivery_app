@@ -82,10 +82,11 @@ public class Program {
         pizzaLeone.pridajObjednavku(pizzaLeone_Objednavka_1);
         pizzaLeone.pridajObjednavku(pizzaLeone_Objednavka_2);
 
+        System.out.println("\n");
 
-        zobrazPolozky(pizzaLeone);
+            zobrazPolozky(pizzaLeone);
 
-        System.out.println("\n\n");
+        System.out.println("\n");
 
         zobrazObjednavky(pizzaLeone);
 
@@ -98,7 +99,7 @@ public class Program {
         //odstranObjednavku(pizzaLeone, pizzaLeone_Objednavka_1);
         //zobrazObjednavky(pizzaLeone);
 
-        pizzaLeone.zmenStavObjednavky(pizzaLeone_Objednavka_1, "OBJEDNANE");
+        pizzaLeone.zmenStavObjednavky(pizzaLeone_Objednavka_1, "PRIJATE");
         System.out.println(pizzaLeone_Objednavka_1.toString());
     }
 

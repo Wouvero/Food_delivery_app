@@ -17,7 +17,7 @@ public class Objednavka implements StavObjednavky {
         this.zakaznik = zakaznik;
         this.restauracia = restauracia;
         this.zoznamPoloziek = new ArrayList();
-        this.stav = "Objednavka bola vytvorena";
+        this.stav = OBJEDNANE;
     }
 
     public void pridajPolozkuDoObjednavky(Polozka polozka){

@@ -25,12 +25,13 @@ public class Restauracia {
     public void pridajProduktDoPonuky(Produkt produkt){
         ponukaProduktov.add(produkt);
         produkt.nastavRestauraciu(this);
+        produkt.zobrazInfo("PRIDANE");
     }
 
     public void odstranProduktZPonuky(Produkt produkt) throws ProduktExceptions {
         if(ponukaProduktov.contains(produkt)){
             ponukaProduktov.remove(produkt);
-            System.out.println("Produkt "  + produkt.toString() + " bol odstraneni z ponuky");
+            produkt.zobrazInfo("PRIDANE");
         }else{
            throw new ProduktExceptions("Dani produkt nieje v ponuke.", produkt);
         }

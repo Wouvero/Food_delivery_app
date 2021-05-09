@@ -23,8 +23,8 @@ public class Jedlo extends Produkt{
     }
 
     @Override
-    public void zobrazInfo() {
-        System.out.println("Toto je jedlo");
+    public void zobrazInfo(String stav) {
+        System.out.println("[" + stav + "] " + "jedlo - [" + super.nazov + "]");
     }
 
     @Override
